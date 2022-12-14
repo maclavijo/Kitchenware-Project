@@ -9,6 +9,8 @@ keras = "*"
 pandas = "*"
 numpy = "*"
 matplotlib = "*"
+pillow = "*"
+streamlit = "*"
 
 [dev-packages]
 
