@@ -10,7 +10,7 @@ from keras.applications.xception import preprocess_input
 
 from flask import Flask
 from flask import request
-from flask import jsonify
+#from flask import jsonify
 
 
 app = Flask('kitchenware')
