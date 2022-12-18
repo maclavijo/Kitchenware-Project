@@ -28,10 +28,10 @@ add_selectbox1 = st.sidebar.selectbox(
 imageList = {
     "Cup"       : ['0000', '0008', '0015', '2744', '3242', '3247', '8170'],
     "Glass"     : ['0022', '1239', '3168', '2103', '5788', '7522', '9374'],
-    "Plate"     : ['2724'],
-    "Spoon"     : ['0190'],
-    "Fork"      : ['0136'],
-    "Knife"     : ['0510', '2721'],
+    "Plate"     : ['0019', '0967', '2724', '3135', '4673', '7263', '9168'],
+    "Spoon"     : ['0190', '0848', '1739', '3049', '4366', '6106', '9085'],
+    "Fork"      : ['0136', '1206', '2113', '3833', '5565', '7261', '9271'],
+    "Knife"     : ['0018', '0510', '1742', '2721', '3277', '4770', '8204'],
      }
 
 add_selectbox2 = st.sidebar.selectbox(
@@ -41,7 +41,7 @@ add_selectbox2 = st.sidebar.selectbox(
 
 img = add_selectbox2 + '.jpg'
 imag = Image.open(f'./images/{img}')
-factor = 0.5
+factor = 0.4
 x,y = imag.size 
 x,y = int(factor * x), int(factor * y)
 imag = imag.resize((x, y))
@@ -59,7 +59,7 @@ with c4:
     df = pd.DataFrame.from_dict({'Label':a.keys(), 'Probability (%)':a.values()})
     df.set_index('Label', inplace=True)
     df.sort_values(by='Probability (%)', ascending=False, inplace=True)
-    st.dataframe(df.style.highlight_max(axis=0), width=300)
+    st.dataframe(df.style.highlight_max(axis=0), width=250)
     
 
 
