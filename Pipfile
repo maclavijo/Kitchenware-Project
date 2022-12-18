@@ -4,7 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-tensorflow = "*"
 keras = "*"
 pandas = "*"
 numpy = "*"
@@ -15,4 +14,4 @@ streamlit = "*"
 [dev-packages]
 
 [requires]
-python_version = "3.10.9"
+python_version = "*"
