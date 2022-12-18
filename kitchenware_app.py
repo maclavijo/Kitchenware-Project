@@ -11,7 +11,7 @@ st.write("#")
 
 img = '0190.jpg'
 factor = 0.4
-imag = Image.open(f'./test/{img}')
+imag = Image.open(f'./images/{img}')
 x,y = imag.size 
 x,y = int(factor * x), int(factor * y)
 imag = imag.resize((x, y))
