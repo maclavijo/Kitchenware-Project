@@ -8,21 +8,15 @@ st.set_page_config(layout="wide")
 
 PIXELS = 300
 
-#col1  = st.columns(1)
-
-#with col1:
-
 st.title("Kitchenware Classifier")
 st.subheader("This machine learning project uses transfer learning.  The arquitecture used is Xception model and it uses the pre-trained \
                 ImageNet weights. The test images are images that the model hasn't seen and the output shows the probabilities \
                 associated to 6 different classes")
-#st.markdown("<h1 style='text-align: center; color: black; font-size: 45px'>Kitchenware Classifier</h1>")#, unsafe_allow_html=True)
+
 st.write("#")
 st.write("#")
 
 c1, c2, c3, c4, c5  = st.columns(5)
-
-testList = pd.read_csv('test.csv')
 
 imageList = {
     "Cup"       : ['0000', '0008', '0015', '2744', '3242', '3247', '8170'],
@@ -59,7 +53,6 @@ with c2:
     st.image(imag, caption=f"This should be a {add_selectbox1}")
 
 with c4:    
-    #st.write('\n')
     st.subheader('Predicted values:\n\n')
     df = pd.DataFrame.from_dict({'Label':a.keys(), 'Probability (%)':a.values()})
     df.set_index('Label', inplace=True)
@@ -67,5 +60,3 @@ with c4:
     st.dataframe(df.style.highlight_max(axis=0), width=180)
     
 
-
-#st.dataframe(df)

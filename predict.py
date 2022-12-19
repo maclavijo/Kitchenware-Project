@@ -19,8 +19,6 @@ def classifier():
     model = load_model('Models/best_Xception_lr0.001_09_0.960.h5')
 
     inputImg = request.get_json()
-    print('here:',inputImg)
-    print(inputImg['im'])
     res = []
     classes = {'cup': 0, 'fork': 1, 'glass': 2, 'knife': 3, 'plate': 4, 'spoon': 5}
 
@@ -28,7 +26,6 @@ def classifier():
 
     im = Image.open(requests.get(inputImg['im'], stream=True).raw)
     #im = Image.open(f'{inputImg["im"]}')
-    print(im)
     im = im.resize((PIXELS, PIXELS  ))
 
     x = np.array(im)
@@ -38,7 +35,6 @@ def classifier():
     X = preprocess_input(X)
     preds = np.round(model.predict(X),4) * 100
     label = preds[0]
-    print(label)
     res.append(label)
     results = {i:round(float(j),2) for i,j in zip(classes.keys(),label)}
 

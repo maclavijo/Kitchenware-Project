@@ -2,7 +2,8 @@
 
 ## Problem description
 
-The objective of this project is to classify images from kitchenware set.  There are cups, glasses, knifes, spoons, forks and plates. There are 5 different ML models and the model with best performance will be chosen.
+The objective of this project is to classify images from kitchenware set.  There are cups, glasses, knifes, spoons, forks and plates. There are 5 different ML models and the model with best performance will be chosen.<br>
+This machine learning project uses transfer learning. The arquitecture used is Xception model and it uses the pre-trained ImageNet weights. The test images are images that the model hasn't seen and the output shows the probabilities associated to 6 different classes
 
 The original data can be found in kaggle.com/competitions/kitchenware-classification/data. The image folder and required files have been already added to the GitHub repository https://github.com/maclavijo/Kitchenware-Kaggle.
 
@@ -56,21 +57,21 @@ Dockerfile has been provided. To create and run the image, from your IDE termina
 1. First option: Create and run the app yourself.<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Create image:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;docker build -t diabetes_app_streamlit .<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;docker build -t kitchenware_streamlit .<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Run image:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;docker run -p 8501:8501 diabetes_app_streamlit<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;docker run -p 8501:8501 supermac789/kitchenware_streamlit<br>
 
 You can now access the Streamlit app in your web browser: Local URL: [http://localhost:8501](http://localhost:8501) or from URL: [http://0.0.0.0:8501](http://0.0.0.0:8501)<br>
 
 2. Second option: To run it using docker hub repository:<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Download image from hub run command:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;docker pull supermac789/diabetes_app_streamlit:latest<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;docker pull supermac789/kitchenware_streamlit:latest<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Run the command from your terminal:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;docker run -p 8501:8501 supermac789/diabetes_app_streamlit:latest<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;docker run -p 8501:8501 supermac789/kitchenware_streamlit:latest<br>
 
 You can now access the Streamlit app in your web browser: Local URL: [http://localhost:8501](http://localhost:8501) or from URL: [http://0.0.0.0:8501](http://0.0.0.0:8501)<br>
 
 ### Cloud deployment - Streamlit cloud
 
-The app can be found and run from [https://maclavijo-diabetespredictionproject-diabetes-app-7rf1nc.streamlit.app/](https://maclavijo-diabetespredictionproject-diabetes-app-7rf1nc.streamlit.app/).
+The app can be found and run from [https://maclavijo-kitchenware-project-kitchenware-app-1irp40.streamlit.app/](https://maclavijo-kitchenware-project-kitchenware-app-1irp40.streamlit.app/).
