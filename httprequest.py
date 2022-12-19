@@ -22,8 +22,3 @@ def httpreq(im = "0000.jpg"):
     print(f'Predictions: {res}')
     
     return res
-
-
-
-
-
