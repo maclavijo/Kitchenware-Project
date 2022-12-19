@@ -11,7 +11,7 @@ PIXELS = 300
 st.title("Kitchenware Classifier")
 st.subheader("This machine learning project uses transfer learning.  The arquitecture used is Xception model and it uses the pre-trained \
                 ImageNet weights. The test images are images that the model hasn't seen and the output shows the probabilities \
-                associated to 6 different classes")
+                associated to 6 different classes.  You can find the repository here: https://github.com/maclavijo/Kitchenware-Project.git.")
 
 st.write("#")
 st.write("#")
@@ -44,7 +44,7 @@ x,y = imag.size
 x,y = int(factor * x), int(factor * y)
 imag = imag.resize((x, y))
 
-print(img)
+#print(img)
 a = httpreq(img)
 
 with c2:
