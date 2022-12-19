@@ -64,7 +64,7 @@ with c4:
     df = pd.DataFrame.from_dict({'Label':a.keys(), 'Probability (%)':a.values()})
     df.set_index('Label', inplace=True)
     df.sort_values(by='Probability (%)', ascending=False, inplace=True)
-    st.dataframe(df.style.highlight_max(axis=0), width=250)
+    st.dataframe(df.style.highlight_max(axis=0), width=180)
     
 
 
