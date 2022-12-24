@@ -6,8 +6,6 @@ from httprequest import httpreq#, httpreqload
 
 st.set_page_config(layout="wide")
 
-PIXELS = 300
-
 st.title("Kitchenware Classifier")
 st.subheader("This machine learning project uses transfer learning.  The arquitecture used is Xception model and it uses the pre-trained \
                 ImageNet weights. The test images are images that the model hasn't seen and the output shows the probabilities \

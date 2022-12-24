@@ -7,5 +7,15 @@
 **/Predictions
 **/Models
 **/CopyDuplicatedImages
+**/Competition
+**/TEST*
+archive*
+**/kitchen
+**/kitchen2
+**/images - Copy
+keras-tuning.ipynb
+KitchenwareKaggle2*
 kitchenware-classification.zip
-Kitchenware_OLD.ipynb
+KitchenwareKaggle.ipynb
+submission*
+kitchenware-classification_OLD.zip

@@ -9,18 +9,17 @@ The original data can be found in kaggle.com/competitions/kitchenware-classifica
 
 ## File structure
 ```
-├─── .ipynb_checkpoints
-├─── images
-├─── Models
-├─── test
-└─── train
-     ├───cup
-     ├───fork
-     ├───glass
-     ├───knife
-     ├───plate
-     ├───spoon
-     └── ...
++---images
++---Models
++---Predictions
++---test
++---train
+|   +---cup
+|   +---fork
+|   +---glass
+|   +---knife
+|   +---plate
+|   \---spoon
 ```
 
 ### Dependency and enviroment management
